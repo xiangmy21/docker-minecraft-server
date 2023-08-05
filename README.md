@@ -1,3 +1,17 @@
+使用docker配置MC服务器
+步骤：
+- 写一个docker-compose.yml：见 ![https://docker-minecraft-server.readthedocs.io/en/latest/#using-docker-compose](https://docker-minecraft-server.readthedocs.io/en/latest/#using-docker-compose)。本 fork 指定了环境变量文件为 .env
+- 在 .env 中进行配置，可配置参数见：![https://docker-minecraft-server.readthedocs.io/en/latest/variables/](https://docker-minecraft-server.readthedocs.io/en/latest/variables/)。
+  例如服务器类型(TYPE)，是否需要正版验证(ONLINE_MODE)，模式(MODE)，地图类型(LEVEL_TYPE)等等
+- 启动：`docker-compose up -d`
+- 查看logs：`docker-compose logs`
+- 停止：`docker-compose down`
+
+一些提醒事项：
+- 可配置mod的服务器类型一般为 fabric 和 forge。
+- 版本jar文件下载可能很慢，可以考虑本地下载完成后上传到服务器对应文件夹
+<hr>
+
 [![Docker Pulls](https://img.shields.io/docker/pulls/itzg/minecraft-server.svg)](https://hub.docker.com/r/itzg/minecraft-server/)
 [![Docker Stars](https://img.shields.io/docker/stars/itzg/minecraft-server.svg?maxAge=2592000)](https://hub.docker.com/r/itzg/minecraft-server/)
 [![GitHub Issues](https://img.shields.io/github/issues-raw/itzg/docker-minecraft-server.svg)](https://github.com/itzg/docker-minecraft-server/issues)
