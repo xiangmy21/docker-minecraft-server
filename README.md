@@ -1,7 +1,7 @@
 使用docker配置MC服务器
 步骤：
-- 写一个docker-compose.yml：见 ![https://docker-minecraft-server.readthedocs.io/en/latest/#using-docker-compose](https://docker-minecraft-server.readthedocs.io/en/latest/#using-docker-compose)。本 fork 指定了环境变量文件为 .env
-- 在 .env 中进行配置，可配置参数见：![https://docker-minecraft-server.readthedocs.io/en/latest/variables/](https://docker-minecraft-server.readthedocs.io/en/latest/variables/)。
+- 写一个docker-compose.yml：见 [https://docker-minecraft-server.readthedocs.io/en/latest/#using-docker-compose](https://docker-minecraft-server.readthedocs.io/en/latest/#using-docker-compose)。本 fork 指定了环境变量文件为 .env
+- 在 .env 中进行配置，可配置参数见：[https://docker-minecraft-server.readthedocs.io/en/latest/variables/](https://docker-minecraft-server.readthedocs.io/en/latest/variables/)。
   例如服务器类型(TYPE)，是否需要正版验证(ONLINE_MODE)，模式(MODE)，地图类型(LEVEL_TYPE)等等
 - 启动：`docker-compose up -d`
 - 查看logs：`docker-compose logs`
